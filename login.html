@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="validasi.js"></script>
+</head>
+<body>
+    
+    <nav id="navbar">
+        <div id="more-dropdown">
+            <p style="font-size: 30px">&#9776;</p>
+        </div>
+        <div id="logo">
+            <a href="home.html"><img src="assets/icon.png" alt="icon"></a>
+        </div>
+            <div class="navigations">
+                <a class="form1" href="home.html" >Home</a>
+                <div class="dropdown">
+                    <a href="products.html">Products</a>
+                    <div class="dropdown-content" style="font-size: small;">
+                        <a href="products.html">Health Care</a>
+                        <a href="products.html">Cosmetics</a>
+                        <a href="products.html">Misc.</a>
+                    </div>
+                </div>
+                <a href="aboutus.html">About Us</a>
+                <a href="register.html">Register</a>
+            <div class="login">
+                    <a href="login.html" class="border" style="color: white ;">Login</a>
+            </div>
+            </div>
+    </nav>
+<br><br>
+    <div id="login-tengah">
+        <h1 style="font-weight: 600;">Login</h1>
+    </div>
+
+    <div id="form1">
+        <form onsubmit="return validasi2()">
+            <div class="item1">
+                <label for="email1">Email</label> <br>
+                <input type="text" id="email1" placeholder="Enter Your Registered Email .... ">
+            </div>
+<br>
+            <div class="item1">
+                <label for="password1">Password</label> <br>
+                <input type="password" id="password1" placeholder="Enter Your Password .... ">
+            </div>
+
+<br> <br>
+            <div class="item1">
+                <label for="register1"></label>
+                <button type="submit1" id="register1">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="register-nav">
+    <p>Don't have an account yet? <a href="register.html">Register</a> now!</p>
+</div>
+
+
+
+    <div id="bawah4">
+        <a href="https://www.instagram.com/abedsully/"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384089.png" alt="instagram" width="3%"></a>
+        <a href="https://www.linkedin.com/in/stefanusalbert/"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384088.png" alt="linkedin" width="3%"></a><br>
+        <p>Copyright &#169; Stefanus Albert Wilson. All Rights Reserved.</p>
+    </div>
+</body>
+</html>

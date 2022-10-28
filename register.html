@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validasi.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="more-dropdown">
+            <p style="font-size: 30px">&#9776;</p>
+        </div>
+        <div id="logo">
+            <a href="home.html"><img src="assets/icon.png" alt="icon"></a>
+        </div>
+            <div class="navigations">
+                <a class="form1" href="home.html" >Home</a>
+                <div class="dropdown">
+                    <a href="products.html">Products</a>
+                    <div class="dropdown-content" style="font-size: small;">
+                        <a href="products.html">Health Care</a>
+                        <a href="products.html">Cosmetics</a>
+                        <a href="products.html">Misc.</a>
+                    </div>
+                </div>
+                <a href="aboutus.html">About Us</a>
+                <a href="register.html" style="border-bottom: 2px solid rgb(98, 182, 155)">Register</a>
+            <div class="login">
+                    <a href="login.html" class="border">Login</a>
+            </div>
+            </div>
+    </nav>
+
+
+    <div id="register-tengah">
+        <h1 style="font-weight: 600;">Register</h1>
+    </div>
+
+    <div id="form">
+        <form onsubmit="return validasi()">
+            <div class="item">
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Full Name">
+            </div>
+<br>
+            <div class="item">
+                <label for="email"></label>
+                <input type="text" id="email" placeholder="Email">
+            </div>
+<br>
+
+            <div class="item">
+                <label for="gender">Gender</label>
+                <br>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <!-- add space -->
+                &nbsp;&nbsp &nbsp;&nbsp &nbsp;&nbsp
+                <!-- add space -->
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+            </div>
+<br>
+            <div class="item">
+                <label for="city">City</label> <br>
+                <select type="text" name="city" id="city" value="city" required>
+                    <option text="" value="" id="" selected disabled>Select Your City</option>
+                    <option text="Jakarta" id="Jakarta" value="Jakarta">Jakarta</option>
+                    <option text="London" id="London" value="London">London</option>
+                    <option text="Madrid" id="Madrid" value="Madrid">Madrid</option>
+                    <option text="Toronto" id="Toronto" value="Toronto">Toronto</option>
+                    <option text="Hamburg" id="Hamburg" value="Hamburg">Hamburg</option>
+                    <option text="Copenhagen" id="Copenhagen" value="Copenhagen">Copenhagen</option>
+                    <option text="Los Angeles" id="Los Angeles" value="Los Angeles">Los Angeles</option>
+                    <option text="Manchester" id="Manchester" value="Manchester">Manchester</option>
+                    <option text="Paris" id="Paris" value="Paris">Paris</option>
+                    <option text="Others" id="Others" value="Others">Others</option>
+                </select>
+            </div>
+<br>
+    <div class="label-password">
+            <div class="item">
+                <label for="password">Password</label> <br>
+                <input type="password" id="password" pattern="(?=.*[!@#$%^&*?.,`-+)(.,/\)])(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+    </div>
+<br>
+            <div class="item">
+                <label for="confirmpassword">Confirm Password</label> <br>
+                <input type="password" id="confirmpassword">
+            </div>
+        </div>
+            <br>
+            <div class="item">
+                <label for="register"></label>
+                <button type="submit" id="register">Register</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="bawah3">
+        <a href="https://www.instagram.com/abedsully/"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384089.png" alt="instagram" width="3%"></a>
+        <a href="https://www.linkedin.com/in/stefanusalbert/"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384088.png" alt="linkedin" width="3%"></a><br>
+        <p>Copyright &#169; Stefanus Albert Wilson. All Rights Reserved.</p>
+    </div>
+    
+</body>
+</html>
